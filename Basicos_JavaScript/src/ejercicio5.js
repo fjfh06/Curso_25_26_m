@@ -75,4 +75,3 @@ Decidme que usuarios no tienen libros
 console.log( usuarios.reduce((acc, usuario) => usuario.data.books>20? acc.concat(usuario.nombre):acc, []));
 console.log( usuarios.reduce((acc, usuario) => acc + usuario.data.books*28, 0) +"€");
 console.log( usuarios.reduce((acc,usuario) => usuario.data.books==0?usuario:acc, []));
-
