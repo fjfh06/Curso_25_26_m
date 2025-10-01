@@ -11,15 +11,13 @@ const productos = [
 
 const agotados = productos
     .filter( producto => producto.stock === 0)
-    .map( producto => {
-    return producto.nombre;
-    })
+    .map( producto => producto.nombre);
 console.log(agotados)
 
 // 2.- Calcular el valor total del inventario (precio * stock) de todos los productos
 
 const total = productos
-    .reduce((acc, producto) => acc+producto.precio * producto.stock ,0)
+    .reduce((acc, producto) => acc+producto.precio * producto.stock ,0);
 console.log(total)
 
 // 3.- Filtrar los productos que pertenecen a la categoria 'Tecnologia' y tienen un precto mayor a 500
@@ -32,5 +30,5 @@ console.log(filtrar)
 
 const descuentoRopa = productos
     .filter(producto => producto.categoria === "Ropa")
-    .map( producto => producto.precio * 0.9)
+    .map( producto => producto.precio * 0.9);
 console.log(descuentoRopa)
