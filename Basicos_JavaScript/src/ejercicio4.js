@@ -46,8 +46,8 @@ Funcion Normalizar nombres propios que le pase como parametro un array de nombre
  * @param {*} nombres Un array con palabras
  * @returns Devuelve las palabras formateadas en mayuscula
  */
-const mayusculas = (nombres) => nombres.
-    map(nombre => nombre
+const mayusculas = (nombres) => nombres
+    .map(nombre => nombre
     .toUpperCase());
 
 /**
